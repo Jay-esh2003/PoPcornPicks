@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: popcornpicks
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: TMDB_API_KEY
+        value: 4d01065e783a8246bb6cc4864ec91780
